@@ -1,0 +1,445 @@
+/*!
+Theme Name: Avocado
+Theme URI: http://underscores.me/
+Author: Sohan Chowdhury
+Author URI: http://iamsohan.com
+Description: Avocado WP Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: avocado
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap'); */
+
+
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+.screen-reader-text {display: none}
+a:hover { text-decoration: none }
+a:focus { outline: 0 solid; text-decoration: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input:focus, button:focus, textarea:focus, a:focus {outline: none}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p:last-child {margin-bottom: 0}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000;
+}
+a{
+    color: #000;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.elementor-widget-text-editor{
+    color: #000 !important;
+}
+.section-padding{
+    margin: 90px auto;
+}
+
+.site-header .header-top {
+    padding: 11px 0;
+}
+
+.social-links a {
+    color: #000;
+    padding-right: 10px;
+}
+
+a.logo {
+    color: #676767;
+    font-size: 90%;
+}
+a.logo h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: #000;
+}
+
+a.logo img {
+    margin-bottom: 10px;
+}
+
+.header-right > a {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    background: #f4f6f7;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 10px;
+}
+
+span.cart-count {
+    font-size: 12px;
+    background: #ee4e23;
+    color: #fff;
+    position: absolute;
+    left: -6px;
+    bottom: -10px;
+    line-height: 24px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Mennu bar css */
+nav#site-navigation {
+    background-color: #2f2f34;
+}
+
+nav#site-navigation ul li {
+    display: inline-block;
+}
+
+ul.sub-menu li {
+    display: block;
+}
+
+nav#site-navigation li ul {
+    position: absolute;
+    background: #2f2f34;
+    z-index: 99;
+    top: 72px;
+    left: auto;
+    text-align: left;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+nav#site-navigation li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav#site-navigation ul li a {
+    color: #fff;
+    font-weight: 400;
+    padding: 25px 30px;
+    display: block;
+}
+
+nav#site-navigation li ul li a {padding: 10px 5px;}
+
+
+nav#site-navigation li ul li {
+    display: block;
+}
+
+nav#site-navigation ul li:hover {
+    background: #689417;
+}
+
+nav#site-navigation li ul li a {
+    padding: 10px 20px;
+}
+
+.header-search-form {
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+
+.header-search-form input[type="search"] {
+    border: medium none;
+    cursor: pointer;
+    height: 40px;
+    padding: 5px 15px;
+    transition: all 0.2s ease 0s;
+    width: 100px;
+    background: #fff;
+}
+.header-search-form input[type="search"]:focus {
+    border: 1px solid #ddd;
+    text-indent: 0;
+    width: 200px;
+    cursor: text;
+}
+
+.header-search-form input {
+    border: none;
+}
+.header-search-form input.search-submit {
+    display: none;
+}
+
+/* Page title Area */
+
+.page-title-area a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    padding: 10px 4px;
+}
+
+.page-title-area {
+    margin: 10px 0;
+}
+
+/* Blog CSS */
+header.entry-header {
+    margin: 30px 0;
+}
+
+a.single-post {
+    width: 20%;
+    float: left;
+}
+
+.single-post-bg {
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+
+.entry-title {
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+
+
+/* Footer CSS */
+.subscription {
+    padding: 80px 0;
+    background-color: #e8ecef;
+}
+.subscription h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 90px;
+}
+.subscription input {
+    border: none;
+    padding: 15px 58px;
+    border-radius: 25px;
+}
+.social-links a {
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 25px;
+}
+
+footer#colophon {
+    background: #f3f7f8;
+    font-size: 90%;
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+
+footer#colophon .col.widget {
+    margin-bottom: 80px;
+}
+
+footer#colophon a {
+    color: #333;
+}
+
+footer#colophon .widget-title {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+footer#colophon .widget a {
+    color: #676767;
+}
+
+footer#colophon ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.8;
+}
+
+.row.header-bottom {
+    padding-bottom: 20px;
+}
+
+
+
+
+/* Error hide for temp */
+
+table.xdebug-error.xe-deprecated {
+    display: none;
+}
+
+/* hide error from step product page */
+table.xdebug-error.xe-warning {
+    display: none;
+}
+
+table.xdebug-error.xe-notice {
+    display: none;
+}
+
+
+/* check Out page Billing details css */
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    max-width: inherit;
+    padding: 0;
+}
+
+.woocommerce form .form-row label {
+    width: 100%;
+}
+
+.woocommerce form input[type=text], .woocommerce form input[type=email], .woocommerce form input[type=url], .woocommerce form input[type=password], .woocommerce form input[type=tel], .woocommerce form select, .woocommerce form textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+}
+
+.woocommerce .woocommerce-input-wrapper {
+    width: 100%;
+}
+
+.woocommerce .woocommerce-info {
+    background-color: inherit;
+    font-weight: 400;
+}
+
+h3#order_review_heading {margin-top: 50px;}
+
+
+/* Cart CSS */
+.header-shopping-cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.avocado-mini-cart-items {
+    width: 300px;
+    background: #333;
+    position: absolute;
+    top: 45px;
+    color: #fff;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.avocado-mini-cart-items ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.avocado-mini-cart-items img {
+    height: 50px;
+    width: 50px;
+}
+
+.avocado-mini-cart-items ul li {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+.avocado-mini-cart-items  p {
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.avocado-mini-cart-items p.buttons {
+    text-align: center;
+}
+
+.avocado-mini-cart-items p.buttons a.button {
+    display: inline-block;
+    color: #fff;
+    background: #ee4e23;
+    padding: 5px 9px;
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+.avocado-mini-cart {
+    position: relative;
+}
+
+.header-right {
+    padding-right: 60px;
+}
+
+.avocado-mini-cart-icon a {
+    color: #333;
+    background: #f4f6f7;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    display: block;
+    text-align: center;
+    line-height: 42px;
+    pointer-events: none;
+    cursor: default;
+}
+.avocado-mini-cart-icon a i.fa{
+    font-size: 17px;
+}
+
+.avocado-mini-cart-items a {
+    color: #fff;
+}
+
+.avocado-mini-cart-items img {
+    margin-right: 10px;
+}
+.header-shopping-cart:hover .avocado-mini-cart-items {
+    opacity: 1;
+    visibility: visible;
+}
+.avocado-mini-cart-items .woocommerce a.remove {
+    display: inline-block;
+}
+
+.avocado-mini-cart-items .woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a {
+    display: inline-block;
+}
+
+.avocado-mini-cart-items .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
+    float: left;
+    width: 50px;
+}
+
+
